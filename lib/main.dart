@@ -24,9 +24,12 @@ class MyApp extends StatelessWidget {
             labelMedium: TextStyle(
                 color: Colors.black, fontFamily: "Raleway", fontSize: 18)),
       ),
-      home: const CategoriesScreen(),
+      // home: const CategoriesScreen(),
+
+      initialRoute: '/', // default value is '/'
       routes: {
-        "/category-meals": (ctx) => CategoryMealScreen(),
+        "/": (ctx) => const CategoriesScreen(),
+        CategoryMealScreen.routeName: (ctx) => CategoryMealScreen(),
       },
     );
   }
