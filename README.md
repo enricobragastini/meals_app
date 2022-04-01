@@ -1,3 +1,4 @@
-# meals
+# Meals App
 
-Flutter didactic Project following Academind Course
+**Flutter didactic basic App Project** 
+following Academind Udemy Course
