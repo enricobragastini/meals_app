@@ -102,37 +102,31 @@ class MealItem extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Expanded(
-                    child: Row(
-                      children: [
-                        const Icon(Icons.schedule),
-                        const SizedBox(
-                          width: 6,
-                        ),
-                        Text("$duration min")
-                      ],
-                    ),
-                  ),
-                  Expanded(
-                    child: Row(
-                      children: [
-                        const Icon(Icons.work),
-                        const SizedBox(
-                          width: 6,
-                        ),
-                        Text(complexityText),
-                      ],
-                    ),
-                  ),
-                  Expanded(
-                    child: Row(children: [
-                      const Icon(Icons.monetization_on),
+                  Row(
+                    children: [
+                      const Icon(Icons.schedule),
                       const SizedBox(
                         width: 6,
                       ),
-                      Text(affordabilityText),
-                    ]),
-                  )
+                      Text("$duration min")
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      const Icon(Icons.work),
+                      const SizedBox(
+                        width: 6,
+                      ),
+                      Text(complexityText),
+                    ],
+                  ),
+                  Row(children: [
+                    const Icon(Icons.monetization_on),
+                    const SizedBox(
+                      width: 6,
+                    ),
+                    Text(affordabilityText),
+                  ]),
                 ],
               ),
             )
