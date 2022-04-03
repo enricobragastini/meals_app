@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:meals/screens/category_meals_screen.dart';
+import 'package:meals/screens/filters_screen.dart';
 import 'package:meals/screens/meal_detail_screen.dart';
 import 'package:meals/screens/tabs_screen.dart';
 
@@ -37,7 +38,8 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (ctx) => const TabsScreen(),
         CategoryMealScreen.routeName: (ctx) => CategoryMealScreen(),
-        MealDetailScreen.routeName: (ctx) => MealDetailScreen()
+        MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        FiltersScreen.routeName: (ctx) => FiltersScreen(),
       },
 
       // Method called when pushing an unregistered route (or a dynamically generated route)
