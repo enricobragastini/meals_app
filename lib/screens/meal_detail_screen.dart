@@ -25,7 +25,7 @@ class MealDetailScreen extends StatelessWidget {
       margin: const EdgeInsets.all(10),
       padding: const EdgeInsets.all(10),
       height: height,
-      width: 300,
+      width: 350,
       child: child,
     );
   }
@@ -63,7 +63,7 @@ class MealDetailScreen extends StatelessWidget {
                         ),
                       );
                     }),
-                150),
+                200),
             buildSectionTitle(context, "Steps"),
             buildContainer(
                 ListView.builder(
